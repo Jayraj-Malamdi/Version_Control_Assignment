@@ -1,10 +1,20 @@
-# example-app-nodejs-backend-react-frontend
+<h1 align="center">Version Control Assignment</h1>
 
-> This is an example app created for the blog post '[What is a good directory structure for a monorepo with a Node.js back end and React front end?](https://simonplend.com/what-is-a-good-directory-structure-for-a-monorepo-with-a-node-js-back-end-and-react-front-end/)'.
+This repository consists of a project, which uses Nodejs as a backend technology and React as a frontend technology.
+____
+## Libraries and Framework used
+
+- [Express](https://expressjs.com/) - "Fast, unopinionated, minimalist web framework for Node.js".
+
+- [React](https://reactjs.org/) - "A JavaScript library for building user interfaces".
+
+- [Webpack](https://www.npmjs.com/package/webpack) - A popular tool for building front end assets e.g. CSS and JavaScript.
+
+- [Sucrase](https://www.npmjs.com/package/sucrase) - A simpler and faster alternative to [Babel](https://babeljs.io/) which brings support for JSX, TypeScript, ES modules, and more to your client side and server side JavaScript.
 
 ## Requirements
 
-- Node.js >= v12
+- [Node.js](https://nodejs.org/en/download/) >= v12
 
 ## Application structure
 
@@ -29,16 +39,5 @@ npm start
 
 Load up http://localhost:3000 in your browser to view the example website.
 
-## Libraries and frameworks used
 
-- [Express](https://expressjs.com/) - "Fast, unopinionated, minimalist web framework for Node.js".
 
-- [React](https://reactjs.org/) - "A JavaScript library for building user interfaces".
-
-- [Webpack](https://www.npmjs.com/package/webpack) - A popular tool for building
-front end assets e.g. CSS and JavaScript.
-
-- [Sucrase](https://www.npmjs.com/package/sucrase) - A simpler and faster
-alternative to [Babel](https://babeljs.io/) which brings support
-for JSX, TypeScript, ES modules, and more to your client side and server side
-JavaScript.
