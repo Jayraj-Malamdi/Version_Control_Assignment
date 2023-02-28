@@ -1,3 +1,8 @@
+<h1 align="center">Version Control Assignment</h1> 
+This repository consists of a project, which uses Nodejs as a backend technology and React as a frontend technology.
+
+___
+
 ## Libraries and frameworks used
 
 - [Express](https://expressjs.com/) - "Fast, unopinionated, minimalist web framework for Node.js".
