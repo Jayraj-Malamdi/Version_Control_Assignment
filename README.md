@@ -16,28 +16,78 @@ ____
 
 - [Node.js](https://nodejs.org/en/download/) >= v12
 
-## Application structure
 
-- `client/` directory - React front end code.
-- `server/` directory - Node.js back end code.
-- `static/` directory - Compiled front end assets. Created by webpack when you run the
-command `npm run build`. The Node.js back end serves serves these assets using the
-[`express.static`](https://expressjs.com/en/starter/static-files.html#serving-static-files-in-express) middleware.
+## Dependencies we will be using:
+```
+{
+  "name": "example-app",
+  "scripts": {
+    "build": "webpack --mode development --entry ./src/client/index.js --output ./static/bundle.js",
+    "start": "node src/server/app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@sucrase/webpack-loader": "^2.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "sucrase": "^3.15.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
+```
+- React frontend dependencies are specified under **devDependencies**
+- Nodejs backend dependencies are specified under **dependencies**
 
-## Usage
+## Project structure
 
-```bash
-# Install dependencies for front end and back end
+```
+├── src
+│   │
+│   ├── client  <- Frontend code resides here
+│   │   ├── components
+│   │   │   └── ExampleComponent.js  <- Contains code of output shown here
+│   │   └── index.js  <- The main entrypoint for your frontend React application
+│   │
+│   └── server  <- Backend code resides here
+│       └── app.js  <- The main entrypoint for your Node.js backend server
+│
+├── package.json  <- Specifies frontend and backend dependencies
+├── package-lock.json
+├── README.md
+└── webpack.config.js  <- Configuration for compiling frontend assets
+```
+
+## Steps to run this project on your machine
+1. Install [Node.js](https://nodejs.org/en/download/) on your machine having its version over 12.0.0
+To check our node version, run this command on terminal
+```
+node --version       
+```
+2. Clone this repository on your machine
+```
+git clone https://github.com/Jayraj-Malamdi/Version_Control_Assignment.git
+```
+3. Install dependencies for front end and back end
+```
 npm install
-
-# Build front end assets with webpack
+```
+4. Run this code to build front end assets with webpack
+```
 npm run build
-
-# Run Node.js back end server
+```
+5. To run Node.js back end server
+```
 npm start
 ```
 
-Load up http://localhost:3000 in your browser to view the example website.
+To view our website we run http://localhost:3030 in our browser.
 
+## Screenshots/Output
+![Screenshot from 2023-02-28 15-53-07](https://user-images.githubusercontent.com/122361229/221826309-2e060375-b355-4824-8035-0f0b35e887ce.png)
 
+## Author
 
+[Jayraj-Malamdi](https://github.com/Jayraj-Malamdi)
