@@ -59,7 +59,8 @@ front end assets e.g. CSS and JavaScript.
 ├── package.json  <- Specifies frontend and backend dependencies
 ├── package-lock.json
 ├── README.md
-└── webpack.config.js  <- Configuration for compiling frontend assets
+├── webpack.config.js  <- Configuration for compiling frontend assets
+└── .gitignore <- List of all the specified files and folders from the project that Git should ignore and not track.
 ```
 
 ## Steps to run this project on your machine
